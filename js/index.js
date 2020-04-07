@@ -13,6 +13,14 @@ function welcomeAlert(event){
 
 get('.logo-heading').addEventListener('mouseover', welcomeAlert)
 
+/****sound on image***/
+function busHorn (event){
+  horn.play();
+}
+
+get('.intro img').addEventListener('click', busHorn)
+
+
 /*****5 color changes on scroll points***/
 
 window.onscroll = function() {myFunction()};
