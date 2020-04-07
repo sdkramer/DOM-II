@@ -30,4 +30,7 @@ function myFunction() {
   if (document.body.scrollTop > 700|| document.documentElement.scrollTop > 700) {
     get('.content-destination').style.backgroundColor = 'red';
   };
+  if (document.body.scrollTop > 900|| document.documentElement.scrollTop > 900) {
+    get('.content-pick').style.backgroundColor = 'green';
+  };
 }
