@@ -8,10 +8,20 @@ const get = (selector) => {
 /*****alert on mouseover*****/
 
 function welcomeAlert(event){
+
+/****stopPropagation***/
+
+  event.stopPropagation();
   return alert("Welcome to the Fun Bus Website")
 }
 
-get('.logo-heading').addEventListener('mouseover', welcomeAlert)
+get('.logo-heading').addEventListener('click', welcomeAlert)
+
+function bigWelcome(event){
+  return alert("Try scrolling down!")
+}
+
+get('.nav-container').addEventListener('click', bigWelcome)
 
 /****sound on image***/
 function busHorn (event){
@@ -21,7 +31,9 @@ function busHorn (event){
 get('.intro img').addEventListener('click', busHorn)
 
 
-/*****5 color changes on scroll points***/
+
+
+/*****5 color changes on scroll points***then remove color changes when scrolling back up******/
 
 window.onscroll = function() {myFunction()};
 
