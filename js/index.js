@@ -56,3 +56,11 @@ function myFunction() {
     get('.content-pick').style.backgroundColor = ''; 
   };
 }
+
+/****wheel*****/
+
+function bigText(event){
+return alert('hi')
+}
+
+get('p').addEventListener('click', bigText)
