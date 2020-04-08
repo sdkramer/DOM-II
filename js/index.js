@@ -28,7 +28,7 @@ function busHorn (event){
   horn.play();
 }
 
-get('.intro img').addEventListener('click', busHorn)
+get('.intro img').addEventListener('mouseover', busHorn)
 
 
 
@@ -71,8 +71,8 @@ function myFunction() {
 
 /****wheel*****/
 
-function bigText(event){
-return alert('hi')
-}
+// function bigText(event){
+// return alert('hi')
+// }
 
-get('p').addEventListener('click', bigText)
+// get('p').addEventListener('click', bigText)
